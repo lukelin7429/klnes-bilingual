@@ -72,9 +72,10 @@ a:hover{color:var(--sand-deep);}
 .title{
   position:relative;
   background:
-    linear-gradient(135deg,#0a1f23 0%,#103942 45%,#1E5963 100%),
-    radial-gradient(ellipse at top right,rgba(217,168,91,.3),transparent 60%);
-  padding:90px 0 80px;
+    linear-gradient(180deg,rgba(10,31,35,.78) 0%,rgba(15,61,69,.62) 45%,rgba(30,89,99,.72) 100%),
+    url("../../photos/hero-courtyard.jpg") center 60%/cover no-repeat,
+    linear-gradient(135deg,#0a1f23 0%,#103942 45%,#1E5963 100%);
+  padding:110px 0 100px;
   text-align:center;
   color:#fff;
   border-bottom:4px solid var(--sand);
@@ -83,8 +84,8 @@ a:hover{color:var(--sand-deep);}
 .title::after{
   content:"";position:absolute;
   inset:0;background:
-    radial-gradient(circle at 80% 20%,rgba(217,168,91,.22),transparent 50%),
-    radial-gradient(circle at 20% 80%,rgba(30,89,99,.25),transparent 50%);
+    radial-gradient(circle at 80% 20%,rgba(217,168,91,.18),transparent 55%),
+    radial-gradient(circle at 20% 80%,rgba(30,89,99,.2),transparent 55%);
   pointer-events:none;
 }
 .title > .wrap{position:relative;z-index:1;}
@@ -372,19 +373,8 @@ section{padding:90px 0;}
   background:linear-gradient(135deg,var(--teal-soft) 0%,#fff 60%,var(--sand-soft) 100%);
   display:flex;align-items:center;justify-content:center;
 }
-.principal-photo .placeholder{
-  text-align:center;color:var(--teal-deep);
-  font-family:'Cormorant Garamond',serif;
-}
-.principal-photo .placeholder .glyph{
-  font-size:84px;line-height:1;font-weight:600;
-}
-.principal-photo .placeholder .label{
-  font-family:'PingFang TC',sans-serif;
-  font-size:13px;font-weight:600;
-  letter-spacing:.14em;text-transform:uppercase;
-  color:var(--ink-soft);
-  margin-top:14px;
+.principal-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
 }
 .principal-text .role{
   color:var(--sand-deep);font-size:14px;font-weight:700;
@@ -849,15 +839,10 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
   box-shadow:var(--shadow);
   color:var(--teal-deep);
   font-family:'Cormorant Garamond',serif;
+  overflow:hidden;
 }
-.principal-portrait .photo-box .glyph{
-  font-size:120px;line-height:1;font-weight:600;
-}
-.principal-portrait .photo-box .label{
-  font-family:'PingFang TC',sans-serif;
-  font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--ink-soft);margin-top:18px;text-align:center;
-  font-weight:600;
+.principal-portrait .photo-box img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
 }
 .principal-portrait .text .role{
   color:var(--sand-deep);font-size:14px;font-weight:700;
