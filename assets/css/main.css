@@ -95,7 +95,6 @@ a:hover{color:var(--sand-deep);}
 .title{
   position:relative;
   background:
-    linear-gradient(180deg,rgba(10,31,35,.78) 0%,rgba(15,61,69,.62) 45%,rgba(30,89,99,.72) 100%),
     url("../../photos/hero-courtyard.jpg") center 60%/cover no-repeat,
     linear-gradient(135deg,#0a1f23 0%,#103942 45%,#1E5963 100%);
   padding:110px 0 100px;
@@ -104,13 +103,6 @@ a:hover{color:var(--sand-deep);}
   border-bottom:4px solid var(--sand);
   overflow:hidden;
 }
-.title::after{
-  content:"";position:absolute;
-  inset:0;background:
-    radial-gradient(circle at 80% 20%,rgba(217,168,91,.18),transparent 55%),
-    radial-gradient(circle at 20% 80%,rgba(30,89,99,.2),transparent 55%);
-  pointer-events:none;
-}
 .title > .wrap{position:relative;z-index:1;}
 .title__eyebrow{
   display:inline-block;
@@ -118,6 +110,7 @@ a:hover{color:var(--sand-deep);}
   color:rgba(255,232,195,.95);font-weight:700;
   text-transform:uppercase;
   margin-bottom:16px;
+  text-shadow:0 1px 3px rgba(0,0,0,.55),0 2px 12px rgba(0,0,0,.4);
 }
 .title h1{
   font-family:'Cormorant Garamond','PingFang TC',serif;
@@ -125,15 +118,15 @@ a:hover{color:var(--sand-deep);}
   line-height:1.05;font-weight:600;letter-spacing:.005em;
   color:#fff;
   margin-bottom:6px;
-  text-shadow:0 2px 16px rgba(0,0,0,.45);
+  text-shadow:0 2px 6px rgba(0,0,0,.5),0 4px 22px rgba(0,0,0,.45);
 }
 .title .h1-zh{
   font-size:clamp(20px,2.6vw,26px);
   font-weight:500;letter-spacing:.08em;
-  color:rgba(255,255,255,.9);
+  color:#fff;
   margin-top:12px;
   font-family:'PingFang TC','Apple LiGothic Medium',sans-serif;
-  text-shadow:0 1px 6px rgba(0,0,0,.35);
+  text-shadow:0 1px 4px rgba(0,0,0,.55),0 2px 14px rgba(0,0,0,.4);
 }
 .title__divider{
   width:60px;height:2px;
@@ -146,8 +139,9 @@ a:hover{color:var(--sand-deep);}
   font-family:'Cormorant Garamond',serif;
   font-style:italic;
   font-size:20px;
-  color:rgba(255,255,255,.95);
+  color:#fff;
   line-height:1.55;
+  text-shadow:0 1px 4px rgba(0,0,0,.55),0 2px 12px rgba(0,0,0,.4);
 }
 .title__tagline .tagline-zh{
   display:block;
@@ -155,8 +149,9 @@ a:hover{color:var(--sand-deep);}
   font-family:'PingFang TC',sans-serif;
   font-size:18px;
   margin-top:8px;
-  color:rgba(255,255,255,.85);
+  color:#fff;
   letter-spacing:.06em;
+  text-shadow:0 1px 4px rgba(0,0,0,.55),0 2px 12px rgba(0,0,0,.4);
 }
 
 
