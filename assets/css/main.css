@@ -32,6 +32,29 @@ a:hover{color:var(--sand-deep);}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
 
 
+/* ============ Motion ============ */
+/* scroll reveal — driven by assets/js/site.js */
+.rvl{
+  opacity:0;transform:translateY(26px);
+  transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);
+}
+.rvl.in{opacity:1;transform:none;}
+/* hero entrance on load */
+.title__eyebrow,.title h1,.title__divider,.title__tagline{
+  opacity:0;transform:translateY(18px);
+  animation:heroRise .9s cubic-bezier(.2,.7,.2,1) forwards;
+}
+.title h1{animation-delay:.12s;}
+.title__divider{animation-delay:.24s;}
+.title__tagline{animation-delay:.34s;}
+@keyframes heroRise{to{opacity:1;transform:none;}}
+@media (prefers-reduced-motion: reduce){
+  .rvl,.title__eyebrow,.title h1,.title__divider,.title__tagline{
+    opacity:1!important;transform:none!important;animation:none!important;
+  }
+}
+
+
 /* ============ TOPBAR ============ */
 .topbar{
   background:rgba(255,255,255,.94);
@@ -130,9 +153,9 @@ a:hover{color:var(--sand-deep);}
   display:block;
   font-style:normal;
   font-family:'PingFang TC',sans-serif;
-  font-size:16.5px;
+  font-size:18px;
   margin-top:8px;
-  color:rgba(255,255,255,.8);
+  color:rgba(255,255,255,.85);
   letter-spacing:.06em;
 }
 
@@ -174,7 +197,7 @@ section{padding:90px 0;}
   font-size:34px;color:var(--teal-deep);
   line-height:1.25;margin-bottom:18px;font-weight:600;
 }
-.about-text .en{font-size:19px;color:var(--ink);margin-bottom:18px;line-height:1.7;}
+.about-text .en{font-size:20px;color:var(--ink);margin-bottom:18px;line-height:1.7;}
 .about-text .zh-divider{
   height:1px;background:var(--line);
   margin:24px 0;
@@ -195,7 +218,7 @@ section{padding:90px 0;}
 }
 .about-text .zh{
   font-family:'PingFang TC','Apple LiGothic Medium',sans-serif;
-  font-size:18.5px;color:var(--ink);line-height:1.85;
+  font-size:20px;color:var(--ink);line-height:1.85;
 }
 .about-text .zh p + p{margin-top:14px;}
 
@@ -337,11 +360,11 @@ section{padding:90px 0;}
 .pillar h3 small{
   display:block;
   font-family:'PingFang TC',sans-serif;
-  font-size:16.5px;color:var(--ink-soft);
+  font-size:18px;color:var(--ink-soft);
   font-weight:500;margin-top:4px;letter-spacing:.04em;
 }
 .pillar .en-body{
-  font-size:17px;color:var(--ink);
+  font-size:19px;color:var(--ink);
   margin:18px 0 8px;line-height:1.7;
 }
 .pillar .divider-tiny{
@@ -350,7 +373,7 @@ section{padding:90px 0;}
 }
 .pillar .zh-body{
   font-family:'PingFang TC',sans-serif;
-  font-size:16.5px;color:var(--ink);line-height:1.85;
+  font-size:19px;color:var(--ink);line-height:1.85;
 }
 
 
@@ -407,7 +430,7 @@ section{padding:90px 0;}
 .principal-text .zh-quote{
   font-family:'PingFang TC',sans-serif;
   font-style:normal;
-  font-size:18.5px;color:var(--ink);
+  font-size:20px;color:var(--ink);
   line-height:1.85;
   padding-left:22px;
   border-left:3px solid var(--teal);
@@ -458,7 +481,7 @@ section{padding:90px 0;}
 .life-card__img .glyph small{
   display:block;
   font-family:'PingFang TC',sans-serif;
-  font-size:15.5px;color:var(--ink);font-weight:500;
+  font-size:17px;color:var(--ink);font-weight:500;
   font-style:normal;margin-top:10px;letter-spacing:.04em;
 }
 .life-card__body{padding:26px 28px 30px;}
@@ -476,16 +499,16 @@ section{padding:90px 0;}
 .life-card h3 small{
   display:block;
   font-family:'PingFang TC',sans-serif;
-  font-size:16px;color:var(--ink-soft);
+  font-size:18px;color:var(--ink-soft);
   font-weight:500;margin-top:4px;letter-spacing:.04em;
 }
 .life-card .en-text{
-  font-size:16.5px;color:var(--ink);margin:14px 0 8px;
+  font-size:19px;color:var(--ink);margin:14px 0 8px;
   line-height:1.7;
 }
 .life-card .zh-text{
   font-family:'PingFang TC',sans-serif;
-  font-size:16px;color:var(--ink-soft);line-height:1.8;
+  font-size:19px;color:var(--ink-soft);line-height:1.8;
   padding-top:10px;border-top:1px dashed var(--line);
   margin-top:12px;
 }
@@ -518,8 +541,8 @@ section{padding:90px 0;}
   font-size:22px;font-weight:500;
   color:rgba(255,255,255,.75);margin-top:8px;
 }
-.visit p{font-size:18px;color:rgba(255,255,255,.85);margin-top:20px;line-height:1.75;}
-.visit p.zh{font-family:'PingFang TC',sans-serif;margin-top:14px;font-size:17px;}
+.visit p{font-size:20px;color:rgba(255,255,255,.88);margin-top:20px;line-height:1.75;}
+.visit p.zh{font-family:'PingFang TC',sans-serif;margin-top:14px;font-size:19px;}
 .contact{
   background:rgba(255,255,255,.06);
   border:1px solid rgba(255,255,255,.14);
@@ -533,7 +556,7 @@ section{padding:90px 0;}
   margin-bottom:4px;
 }
 .contact dd{
-  font-size:18px;color:#fff;
+  font-size:19px;color:#fff;
   font-family:'PingFang TC',sans-serif;
   line-height:1.55;
 }
@@ -592,7 +615,7 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
 .page-hero .tagline .zh{
   display:block;font-style:normal;
   font-family:'PingFang TC',sans-serif;
-  font-size:15.5px;color:rgba(255,255,255,.78);
+  font-size:17px;color:rgba(255,255,255,.82);
   margin-top:6px;letter-spacing:.06em;
 }
 
@@ -617,16 +640,16 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
 }
 .prose h3 .zh{
   display:block;font-family:'PingFang TC',sans-serif;
-  font-size:15.5px;color:var(--ink-soft);font-weight:500;
+  font-size:17px;color:var(--ink-soft);font-weight:500;
   margin-top:2px;letter-spacing:.04em;
 }
 .prose p{
-  font-size:17.5px;color:var(--ink);
+  font-size:20px;color:var(--ink);
   line-height:1.78;margin:14px 0;
 }
 .prose .zh-block{
   font-family:'PingFang TC',sans-serif;
-  font-size:17px;color:var(--ink-soft);
+  font-size:19px;color:var(--ink-soft);
   line-height:1.85;
   border-left:3px solid var(--teal-soft);
   padding-left:18px;
@@ -646,7 +669,7 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
   display:block;
   font-family:'PingFang TC',sans-serif;
   font-style:normal;
-  font-size:17px;color:var(--ink-soft);
+  font-size:18px;color:var(--ink-soft);
   margin-top:10px;
 }
 
@@ -674,12 +697,12 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
   margin-top:6px;letter-spacing:.04em;
 }
 .playlist-head .intro{
-  font-size:17px;color:var(--ink);line-height:1.75;
+  font-size:19px;color:var(--ink);line-height:1.75;
   margin-top:18px;
 }
 .playlist-head .intro-zh{
   font-family:'PingFang TC',sans-serif;
-  font-size:16.5px;color:var(--ink-soft);line-height:1.85;
+  font-size:18px;color:var(--ink-soft);line-height:1.85;
   margin-top:10px;padding-top:10px;
   border-top:1px dashed var(--line);
 }
@@ -737,11 +760,11 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
 }
 .curriculum-card h4 .zh{
   display:block;font-family:'PingFang TC',sans-serif;
-  font-size:14.5px;color:var(--ink-soft);
+  font-size:16px;color:var(--ink-soft);
   font-weight:500;margin-top:2px;
 }
 .curriculum-card .periods{
-  font-size:14.5px;color:var(--ink);
+  font-size:17px;color:var(--ink);
   margin-top:14px;
   font-family:'Cormorant Garamond',serif;font-style:italic;
 }
@@ -756,7 +779,7 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
 .stations-intro{
   text-align:center;
   max-width:660px;margin:0 auto 50px;
-  color:var(--ink-soft);font-size:17.5px;line-height:1.75;
+  color:var(--ink-soft);font-size:19px;line-height:1.75;
 }
 .station{
   display:grid;grid-template-columns:80px 1fr;
@@ -786,18 +809,18 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
 }
 .station-body h3 .zh{
   display:block;font-family:'PingFang TC',sans-serif;
-  font-size:16px;color:var(--ink-soft);
+  font-size:18px;color:var(--ink-soft);
   font-weight:500;margin-top:2px;letter-spacing:.04em;
 }
 .station-body .en-line{
   font-family:'Cormorant Garamond',serif;
-  font-size:18px;color:var(--ink);
+  font-size:20px;color:var(--ink);
   margin-top:16px;line-height:1.65;
   font-style:italic;
 }
 .station-body .zh-line{
   font-family:'PingFang TC',sans-serif;
-  font-size:16.5px;color:var(--ink-soft);
+  font-size:18px;color:var(--ink-soft);
   margin-top:8px;line-height:1.7;
 }
 .station-body .phrases{
@@ -816,11 +839,11 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
   display:grid;gap:8px;
 }
 .station-body .phrases li{
-  font-size:15.5px;color:var(--ink);line-height:1.55;
+  font-size:17px;color:var(--ink);line-height:1.55;
 }
 .station-body .phrases li .zh{
   display:block;font-family:'PingFang TC',sans-serif;
-  font-size:14.5px;color:var(--ink-soft);margin-top:2px;
+  font-size:16px;color:var(--ink-soft);margin-top:2px;
 }
 
 
@@ -862,7 +885,7 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
 }
 .principal-portrait .text .credentials{
   margin-top:18px;
-  font-size:15.5px;color:var(--ink-soft);
+  font-size:18px;color:var(--ink-soft);
   line-height:1.7;
 }
 .principal-portrait .text .credentials strong{
@@ -899,16 +922,16 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
 }
 .commit h3 .zh{
   display:block;font-family:'PingFang TC',sans-serif;
-  font-size:15px;color:var(--ink-soft);
+  font-size:17px;color:var(--ink-soft);
   font-weight:500;margin-top:2px;
 }
 .commit p{
-  font-size:15.5px;color:var(--ink);
+  font-size:18px;color:var(--ink);
   line-height:1.7;margin-top:10px;
 }
 .commit p.zh{
   font-family:'PingFang TC',sans-serif;
-  color:var(--ink-soft);font-size:14.5px;
+  color:var(--ink-soft);font-size:17px;
   line-height:1.8;border-top:1px dashed var(--line);
   padding-top:10px;margin-top:12px;
 }
@@ -926,7 +949,7 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
   padding:14px 18px;
   text-align:left;
   border-bottom:1px solid var(--line);
-  font-size:16px;
+  font-size:18px;
 }
 .history-table th{
   background:var(--teal-soft);
