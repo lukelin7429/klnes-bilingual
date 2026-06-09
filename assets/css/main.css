@@ -1002,3 +1002,78 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
   .topbar-nav{gap:14px;justify-content:flex-start;}
   .topbar-nav a{font-size:13.5px;}
 }
+
+
+/* ============ International Exchange feature card ============ */
+/* A large, photo-ready feature card on the Bilingual Campus page that links
+   into the International Exchange course (/international/). */
+.xchg-section{padding:0 0 90px;background:#fff;}
+.xchg{
+  max-width:var(--max);margin:0 auto;
+  display:grid;grid-template-columns:1fr;
+  background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.xchg:hover{transform:translateY(-4px);box-shadow:0 22px 56px -20px rgba(15,61,69,.36);}
+@media (min-width:860px){ .xchg{grid-template-columns:0.92fr 1fr;} }
+.xchg__media{
+  position:relative;min-height:280px;
+  /* PHOTO SLOT — when a photo arrives, add it as the top layer here, e.g.:
+     background:linear-gradient(180deg,transparent 0%,transparent 42%,rgba(10,31,35,.7) 100%),
+                url("../../photos/indonesia-exchange.jpg") center/cover no-repeat; */
+  background:
+    radial-gradient(circle at 26% 28%, rgba(255,255,255,.30), transparent 46%),
+    radial-gradient(circle at 82% 78%, rgba(217,168,91,.45), transparent 50%),
+    linear-gradient(135deg,#0f3d45 0%,#1E5963 55%,#2c7a78 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+  color:#fff;text-align:center;padding:46px 26px;border-bottom:4px solid var(--sand);
+}
+@media (min-width:860px){ .xchg__media{border-bottom:none;border-right:4px solid var(--sand);} }
+.xchg__flag{font-size:88px;line-height:1;filter:drop-shadow(0 6px 16px rgba(0,0,0,.32));}
+.xchg__media-label{
+  font-family:'Cormorant Garamond','PingFang TC',serif;
+  font-size:27px;font-weight:600;letter-spacing:.03em;
+  text-shadow:0 2px 8px rgba(0,0,0,.4);
+}
+.xchg__media-sub{
+  font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,236,205,.95);
+}
+.xchg__body{padding:42px 32px;}
+@media (min-width:860px){ .xchg__body{padding:56px 50px;} }
+.xchg__eyebrow{
+  display:inline-block;color:var(--sand-deep);
+  font-size:14px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px;
+}
+.xchg__title{
+  font-family:'Cormorant Garamond','PingFang TC',serif;
+  font-size:clamp(32px,4.4vw,42px);font-weight:600;color:var(--teal-deep);line-height:1.12;
+}
+.xchg__title .zh{
+  display:block;font-family:'PingFang TC',sans-serif;
+  font-size:20px;font-weight:500;color:var(--ink-soft);margin-top:10px;letter-spacing:.03em;
+}
+.xchg__desc{font-size:20px;color:var(--ink);line-height:1.72;margin-top:22px;}
+.xchg__desc-zh{font-size:18px;color:var(--ink-soft);line-height:1.85;margin-top:14px;}
+.xchg__lessons{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+.xchg__chip{
+  font-size:15.5px;font-weight:700;padding:8px 16px;border-radius:99px;
+  background:var(--teal-soft);color:var(--teal-deep);
+}
+.xchg__chip--soon{background:var(--sand-soft);color:var(--sand-deep);}
+.xchg__cta{
+  display:inline-flex;align-items:center;gap:10px;margin-top:30px;
+  background:var(--teal);color:#fff;
+  font-size:19px;font-weight:700;letter-spacing:.02em;
+  padding:16px 32px;border-radius:14px;text-decoration:none;
+  box-shadow:0 10px 26px -10px rgba(30,89,99,.6);
+  transition:transform .15s ease, background .15s ease;
+}
+.xchg__cta:hover{background:var(--teal-deep);color:#fff;transform:translateY(-3px);}
+.xchg__cta:active{transform:scale(.98);}
+@media (max-width:560px){
+  .xchg__title{font-size:30px;}
+  .xchg__desc{font-size:19px;}
+  .xchg__cta{width:100%;justify-content:center;}
+}
