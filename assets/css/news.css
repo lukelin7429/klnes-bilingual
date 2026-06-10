@@ -23,11 +23,12 @@ body{font-size:20px;}
 /* ============ NEWS INDEX HERO (page-hero variant) ============ */
 .news-hero{
   position:relative;
+  /* clean campus-gate photo + bottom-only scrim (no full-frame mask); see feedback_banner_no_muddy_overlay */
   background:
-    linear-gradient(180deg, rgba(10,31,35,.30) 0%, rgba(10,31,35,.0) 38%, rgba(10,31,35,.62) 100%),
-    url("../photos/hero-courtyard.jpg") center 58%/cover no-repeat,
-    linear-gradient(135deg,#0a1f23 0%,#103942 45%,#1E5963 100%);
-  padding:78px 0 84px;color:#fff;text-align:center;
+    linear-gradient(180deg,transparent 0%,transparent 42%,rgba(10,31,35,.74) 100%),
+    url("../../photos/school-gate.jpg") center 40%/cover no-repeat,
+    linear-gradient(135deg,#0a1f23 0%,#103942 60%,#1E5963 100%);
+  padding:82px 0 88px;color:#fff;text-align:center;
   border-bottom:4px solid var(--sand);overflow:hidden;
 }
 .news-hero .eyebrow{
@@ -38,9 +39,9 @@ body{font-size:20px;}
 .news-hero h1{
   font-family:'Cormorant Garamond','PingFang TC',serif;
   font-size:clamp(38px,6.4vw,60px);font-weight:600;line-height:1.05;color:#fff;
-  text-shadow:0 2px 16px rgba(0,0,0,.42);
+  text-shadow:0 2px 6px rgba(0,0,0,.55),0 4px 22px rgba(0,0,0,.5);
 }
-.news-hero h1 .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:clamp(17px,2.2vw,22px);font-weight:500;color:rgba(255,255,255,.92);margin-top:10px;letter-spacing:.05em;}
+.news-hero h1 .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:clamp(17px,2.2vw,22px);font-weight:500;color:#fff;margin-top:10px;letter-spacing:.05em;text-shadow:0 1px 4px rgba(0,0,0,.6),0 2px 14px rgba(0,0,0,.45);}
 
 .intro{padding:50px 0 8px;}
 .intro .lead{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--teal-deep);line-height:1.4;}
