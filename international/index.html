@@ -5,158 +5,330 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>International Education · 國際教育 — KangLang Elementary</title>
-<meta name="description" content="KangLang Elementary's International Education course — meeting friends around the world, one country at a time. Lesson 1: Indonesia. 槺榔國小國際教育課程：一次認識一個國家的好朋友。第一課：印尼。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>International Education · 國際教育 — KangLang Elementary 槺榔國小</title>
+<meta name="description" content="KangLang Elementary's International Education program — online exchanges, postcards, and culture boxes with friends in India, Israel, Spain, Türkiye, Japan, Indonesia, Vietnam, and Russia. Each report has a photo slideshow and an English Learning Zone. 槺榔國小國際教育：與八個國家的線上交流、明信片與文化箱，每篇附影像輪播與英語學習區。">
 <meta property="og:title" content="International Education · 國際教育 — KangLang Elementary">
 <meta property="og:description" content="Meeting friends around the world, one country at a time. 一次認識一個國家的好朋友。">
+<meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --teal:#1E5963;--teal-deep:#0F3D45;--teal-soft:#E5F1F2;
-    --red:#E0383A;--red-soft:#FFE5E5;--red-deep:#A8181A;
-    --gold:#E89B2E;--gold-soft:#FFF1D6;--gold-deep:#9A6510;
-    --ink:#24303A;--ink-soft:#5b6976;--line:#e7e2d6;
-    --shadow:0 16px 40px -16px rgba(15,61,69,.30);--shadow-sm:0 8px 20px -8px rgba(15,61,69,.22);
-  }
-  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
-  html{scroll-behavior:smooth;}
-  body{color:var(--ink);background:linear-gradient(180deg,#EAF5F4 0%,#FFF8EC 50%,#FDEFEF 100%);background-attachment:fixed;font-family:'Nunito','PingFang TC','Apple LiGothic Medium','Microsoft JhengHei',sans-serif;font-size:20px;line-height:1.6;-webkit-font-smoothing:antialiased;}
-  @media (min-width:720px){ body{ font-size:22px; } }
-  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  .school-nav{background:rgba(255,255,255,.95);border-bottom:1px solid #dfe7e6;padding:14px 0;position:sticky;top:0;z-index:60;backdrop-filter:blur(8px);}
-  .school-nav__inner{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;align-items:center;}
-  .school-nav a{color:var(--teal-deep);text-decoration:none;font-weight:700;font-size:16px;padding:7px 14px;border-radius:99px;transition:transform .15s, background .15s, color .15s;white-space:nowrap;}
-  @media (min-width:720px){ .school-nav a{ font-size:17px; } }
-  .school-nav a:hover{background:var(--teal-soft);color:var(--red);transform:translateY(-2px);}
-  .school-nav a.is-active{background:var(--teal);color:#fff;}
-  .school-nav__sep{color:var(--ink-soft);opacity:.35;}
-  @media(max-width:620px){.school-nav__sep{display:none;}}
-
-  .hero{background:radial-gradient(circle at 18% 25%, rgba(232,155,46,.40), transparent 45%),radial-gradient(circle at 82% 30%, rgba(224,56,58,.34), transparent 48%),linear-gradient(135deg,var(--teal-deep) 0%, var(--teal) 60%, #2c7a78 100%);color:#fff;text-align:center;padding:54px 22px 60px;border-bottom:6px solid var(--gold);}
-  .hero__globe{font-size:58px;line-height:1;animation:spin 12s linear infinite;display:inline-block;}
-  @keyframes spin{to{transform:rotate(360deg);}}
-  .hero__eyebrow{display:inline-block;margin-top:12px;font-size:14px;letter-spacing:3px;font-weight:800;text-transform:uppercase;color:#FFE7BE;}
-  .hero__title{font-family:'Fredoka','PingFang TC',sans-serif;font-weight:700;font-size:40px;line-height:1.1;margin-top:8px;text-shadow:0 3px 14px rgba(0,0,0,.3);}
-  @media (min-width:720px){ .hero__title{ font-size:60px; } }
-  .hero__zh{font-size:20px;font-weight:700;color:#EAF7F6;margin-top:10px;}
-  @media (min-width:720px){ .hero__zh{ font-size:25px; } }
-  .hero__tag{max-width:680px;margin:16px auto 0;font-size:18px;color:#f4fbfa;line-height:1.5;}
-  @media (min-width:720px){ .hero__tag{ font-size:21px; } }
-
-  .intro{max-width:760px;margin:44px auto 6px;text-align:center;}
-  .intro p{color:var(--ink);}
-  .intro .zh{color:var(--ink-soft);font-size:17px;display:block;margin-top:8px;}
-
-  .grid{display:grid;grid-template-columns:1fr;gap:22px;padding:32px 0 60px;}
-  @media (min-width:680px){ .grid{ grid-template-columns:1fr 1fr; } }
-  .card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .18s, box-shadow .18s;}
-  .card:hover{transform:translateY(-6px) scale(1.01);box-shadow:var(--shadow);}
-  .card__top{padding:34px 26px;text-align:center;position:relative;}
-  .card--id .card__top{background:linear-gradient(135deg,#E0383A 0%, #c52d2f 100%);color:#fff;}
-  .card--soon .card__top{background:var(--teal-soft);color:var(--teal-deep);}
-  .card__flag{font-size:64px;line-height:1;filter:drop-shadow(0 4px 10px rgba(0,0,0,.25));}
-  .card__country{font-family:'Fredoka',sans-serif;font-weight:700;font-size:30px;margin-top:10px;}
-  .card__country-zh{font-size:16px;font-weight:800;margin-top:2px;opacity:.92;}
-  .card__body{padding:22px 24px 26px;}
-  .card__no{display:inline-block;font-family:'Fredoka',sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;color:#fff;background:var(--gold);padding:3px 12px;border-radius:99px;text-transform:uppercase;}
-  .card--soon .card__no{background:var(--ink-soft);}
-  .card__h{font-family:'Fredoka',sans-serif;font-weight:700;font-size:22px;color:var(--teal-deep);margin-top:12px;line-height:1.2;}
-  .card__desc{font-size:16.5px;color:var(--ink-soft);margin-top:8px;line-height:1.5;}
-  .card__go{display:inline-block;margin-top:16px;font-weight:800;color:var(--red);}
-  .card--soon{opacity:.85;}
-  .card--soon .card__go{color:var(--ink-soft);}
-
-  footer{text-align:center;padding:28px 22px 40px;font-size:15px;color:var(--ink-soft);line-height:1.6;}
-  footer a{color:var(--teal);text-decoration:none;border-bottom:2px solid var(--gold);font-weight:700;}
-</style>
-<script defer src="/analytics.js"></script>
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/css/news.css">
+<link rel="stylesheet" href="../assets/css/intl.css">
 </head>
 <body>
 
-<nav class="school-nav">
-  <div class="school-nav__inner">
-    <a href="/">Home</a>
-    <span class="school-nav__sep">·</span>
-    <a href="/principal/">Principal</a>
-    <span class="school-nav__sep">·</span>
-    <a href="/bilingual-campus/" class="is-active">Bilingual Campus</a>
-    <span class="school-nav__sep">·</span>
-    <a href="/community-walk/">Community Walk</a>
-    <a href="/news/">News</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <div class="hero__globe">🌏</div>
-    <div class="hero__eyebrow">International Exchange · A Course at KangLang</div>
-    <h1 class="hero__title">Making Friends with Indonesia</h1>
-    <div class="hero__zh">國際交流課程・和印尼做朋友</div>
-    <p class="hero__tag">Our exchange course takes us across the sea to meet a new friend — Indonesia. We learn it lesson by lesson: say hello, discover beautiful things, and make a friend. <br>這門交流課程帶我們越過海洋、認識新朋友——印尼。我們一課一課慢慢學：打招呼、認識美好的事物、交朋友。</p>
-  </div>
-</header>
-
-<div class="wrap">
-  <div class="intro">
-    <p>Each lesson has a <b>handout on the left</b> and a <b>mini quiz on the right</b>, with a 🔊 speaker on every word so you can hear how it sounds.<span class="zh">每一課左邊是講義、右邊是小考，每個字旁邊都有 🔊 喇叭，點一下就能聽發音。</span></p>
-  </div>
-
-  <div class="grid">
-
-    <a class="card card--id" href="/international/indonesia/">
-      <div class="card__top">
-        <div class="card__flag">🇮🇩</div>
-        <div class="card__country">Lesson 1</div>
-        <div class="card__country-zh">第一課</div>
-      </div>
-      <div class="card__body">
-        <span class="card__no">Ready · 可以上了</span>
-        <div class="card__h">Friends Across the Sea: Indonesia</div>
-        <div class="card__desc">Say hello in Indonesian, learn about gotong royong, batik, and angklung, and take the quiz.<br>用印尼語打招呼，認識互助合作、蠟染與竹樂器，再玩小考。</div>
-        <span class="card__go">Start the lesson →</span>
-      </div>
-    </a>
-
-    <div class="card card--soon">
-      <div class="card__top">
-        <div class="card__flag">✏️</div>
-        <div class="card__country">Lesson 2</div>
-        <div class="card__country-zh">第二課</div>
-      </div>
-      <div class="card__body">
-        <span class="card__no">Coming soon</span>
-        <div class="card__h">More to Explore Together</div>
-        <div class="card__desc">The next lesson in our Indonesia exchange is on its way. Keep learning and check back soon!<br>印尼交流的下一課正在準備中，繼續學習，很快回來看看喔！</div>
-        <span class="card__go">Stay tuned · 敬請期待</span>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="topbar-brand">
+      <div class="topbar-name">
+        <a href="../" style="color:inherit;text-decoration:none;">
+          KangLang Elementary
+          <small>臺中市清水區槺榔國民小學</small>
+        </a>
       </div>
     </div>
-
-    <div class="card card--soon">
-      <div class="card__top">
-        <div class="card__flag">🌟</div>
-        <div class="card__country">Lesson 3</div>
-        <div class="card__country-zh">第三課</div>
-      </div>
-      <div class="card__body">
-        <span class="card__no">Coming soon</span>
-        <div class="card__h">Our Friendship Grows</div>
-        <div class="card__desc">Lesson by lesson, this course will keep growing. New words, new stories, new friends.<br>一課接著一課，這門課會不斷長大：新的單字、新的故事、新的朋友。</div>
-        <span class="card__go">Stay tuned · 敬請期待</span>
-      </div>
-    </div>
-
+    <nav class="topbar-nav">
+      <a href="../">Home</a>
+      <a href="../principal/">Principal</a>
+      <a href="../news/">News</a>
+      <a href="../international/" class="is-active">International Education</a>
+    </nav>
   </div>
 </div>
 
+<!-- ============ HERO ============ -->
+<header class="news-hero">
+  <div class="wrap">
+    <span class="globe">🌏</span>
+    <span class="eyebrow">Qingshui · Taichung · 國際教育</span>
+    <h1>International Education
+      <span class="zh">國際教育・和世界做朋友</span>
+    </h1>
+  </div>
+</header>
+
+<!-- ============ INTRO ============ -->
+<section class="intro">
+  <div class="wrap-narrow">
+    <p class="lead">From video calls and handwritten postcards to culture boxes that travel across the sea &mdash; a small village school meeting the world, one country at a time.</p>
+    <p class="lead-zh">從視訊連線、手寫明信片，到漂洋過海的文化箱——一所海邊的村落小學，一次認識一個國家的好朋友。每一篇報導下方都有「<strong>影像輪播</strong>」與「<strong>English Learning Zone 英語學習區</strong>」：關鍵字（點 🔊 聽發音）、例句，還有一段可以跟著唸的對話。</p>
+    <div class="flag-rail"><span class="flag"><span class="emoji">🇮🇳</span>India · 印度</span><span class="flag"><span class="emoji">🇮🇱</span>Israel · 以色列</span><span class="flag"><span class="emoji">🇪🇸</span>Spain · 西班牙</span><span class="flag"><span class="emoji">🇹🇷</span>Türkiye · 土耳其</span><span class="flag"><span class="emoji">🇯🇵</span>Japan · 日本</span><span class="flag"><span class="emoji">🇮🇩</span>Indonesia · 印尼</span><span class="flag"><span class="emoji">🇻🇳</span>Vietnam · 越南</span><span class="flag"><span class="emoji">🇷🇺</span>Russia · 俄羅斯</span></div>
+  </div>
+</section>
+
+<!-- ============ REPORTS GRID ============ -->
+<section>
+  <div class="wrap">
+    <div class="news-grid">
+
+      <a href="indonesia-bang-chhun-hong/" class="news-card">
+        <div class="news-card__img"><img src="indonesia-bang-chhun-hong/photo_01.jpg" alt="A Taiwanese Song Travels to Indonesia" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇩 International Exchange · Arts · 國際交流・藝術文化</div>
+          <h3>A Taiwanese Song Travels to Indonesia<span class="zh">一首望春風，唱到印尼</span></h3>
+          <div class="news-card__date">June 9, 2026 · 2026 年 6 月 9 日</div>
+          <p class="news-card__hook">For our second meeting with Indonesia, we did not bring more English sentences — we brought a song. Class 5B sang the Taiwanese Hokkien classic Bang Chhun Hong, and Class 5A played it on recorders.</p>
+          <p class="news-card__hook-zh">第二次與印尼連線，我們帶去的不是更多英文句子，而是一首歌。五年乙班唱起閩南語經典〈望春風〉，五年甲班用直笛伴奏。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="russia-landmarks/" class="news-card">
+        <div class="news-card__img"><img src="russia-landmarks/photo_01.jpg" alt="A Tour of Russia, Guided by an Older Friend" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇷🇺 International Exchange · 國際交流</div>
+          <h3>A Tour of Russia, Guided by an Older Friend<span class="zh">俄羅斯姐姐帶我們看世界</span></h3>
+          <div class="news-card__date">June 2, 2026 · 2026 年 6 月 2 日</div>
+          <p class="news-card__hook">An eighth-grade student from Russia — only two years older than us — confidently introduced her country in English: its faith and festivals, its food and clothing, and a string of breathtaking landmarks.</p>
+          <p class="news-card__hook-zh">一位只比我們大兩歲的俄羅斯八年級姐姐，自信地用英文介紹她的國家——信仰與節慶、食物與服飾，還有一座座令人驚嘆的地標。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="india-sdgs/" class="news-card">
+        <div class="news-card__img"><img src="india-sdgs/photo_01.jpg" alt="Talking About the Planet with Friends in India" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇳 International Exchange · Sustainability · 國際交流・永續教育</div>
+          <h3>Talking About the Planet with Friends in India<span class="zh">與印度學生聊聊我們的地球</span></h3>
+          <div class="news-card__date">May 5, 2026 · 2026 年 5 月 5 日</div>
+          <p class="news-card__hook">Reduce, reuse, recycle. Our sixth graders met students from Him Academy in India to share how each country looks after the Earth, built around the United Nations Sustainable Development Goals.</p>
+          <p class="news-card__hook-zh">減量、再利用、回收。六年級的孩子與印度 Him Academy 的學生連線，圍繞聯合國永續發展目標，分享兩國如何照顧我們的地球。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="vietnam-landmarks/" class="news-card">
+        <div class="news-card__img"><img src="vietnam-landmarks/photo_01.jpg" alt="Traveling Between Taiwan and Vietnam" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇻🇳 International Exchange · 國際交流</div>
+          <h3>Traveling Between Taiwan and Vietnam<span class="zh">在台灣與越南之間旅行</span></h3>
+          <div class="news-card__date">April 28, 2026 · 2026 年 4 月 28 日</div>
+          <p class="news-card__hook">Without boarding a single plane, our fifth graders &ldquo;visited&rdquo; both countries through a screen — sharing Taiwan's most beautiful places and discovering Vietnam's famous sights in return.</p>
+          <p class="news-card__hook-zh">沒搭上任何一班飛機，五年級的孩子透過螢幕「走訪」了兩個國家——分享台灣最美的地方，也認識越南的著名景點。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="indonesia-first-exchange/" class="news-card">
+        <div class="news-card__img"><img src="indonesia-first-exchange/photo_01.jpg" alt="Our First International Exchange" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇩 International Exchange · 國際交流</div>
+          <h3>Our First International Exchange<span class="zh">我們的第一次國際交流</span></h3>
+          <div class="news-card__date">March 31, 2026 · 2026 年 3 月 31 日</div>
+          <p class="news-card__hook">Thirty seconds in front of the camera, in English, with new friends in Indonesia watching. Excited and a little nervous — and braver by the end.</p>
+          <p class="news-card__hook-zh">面對鏡頭、用英文、三十秒——印尼的新朋友正看著。既期待又有點緊張，但到最後，變得更勇敢了。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="israel-graduation-video/" class="news-card">
+        <div class="news-card__img news-card__img--video"><span class="play">▶</span></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇱 Video Exchange · 影片交流</div>
+          <h3>A Graduation Trip, Sung Across the World<span class="zh">用一首歌，把畢業旅行寄到以色列</span></h3>
+          <div class="news-card__date">May 30, 2025 · 2025 年 5 月 30 日</div>
+          <p class="news-card__hook">In the second year of our Sister School Program, our sixth graders filmed their graduation trip and set it to a song they had practiced for almost a whole year — then sent it all the way to Israel.</p>
+          <p class="news-card__hook-zh">姐妹校計畫邁入第二年，六年級的孩子把畢業旅行拍成影片，配上練了將近一年的歌，寄到了遙遠的以色列。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="israel-endangered-animals/" class="news-card">
+        <div class="news-card__img"><img src="israel-endangered-animals/photo_01.jpg" alt="Saving Animals, a Shared Job for the World" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇱 International Exchange · Ecology · 國際交流・生態保育</div>
+          <h3>Saving Animals, a Shared Job for the World<span class="zh">保護動物，是全世界的事</span></h3>
+          <div class="news-card__date">May 26, 2025 · 2025 年 5 月 26 日</div>
+          <p class="news-card__hook">On the theme of endangered animals, Class 602 introduced Israel to Taiwan's rare wildlife — and learned, in return, about animals they had never heard of before.</p>
+          <p class="news-card__hook-zh">以「瀕臨絕種的動物」為主題，六年乙班向以色列介紹台灣珍稀的野生動物，也認識了一群從沒聽過的動物。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="india-song-videos/" class="news-card">
+        <div class="news-card__img news-card__img--video"><span class="play">▶</span></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇳 Video Exchange · 影片交流</div>
+          <h3>Sports Day and a Country Walk, Filmed for India<span class="zh">把運動會與鄉野踏查，拍給印度看</span></h3>
+          <div class="news-card__date">May 14, 2025 · 2025 年 5 月 14 日</div>
+          <p class="news-card__hook">In year two of our Sister School Program, our fifth graders turned their sports day and a local field trip into films for India — carried along by a song they had practiced for almost a year.</p>
+          <p class="news-card__hook-zh">姐妹校計畫第二年，五年級的孩子把運動會與鄉野踏查拍成影片寄給印度，背景音樂是練了將近一年的一首歌。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="india-street-food-5b/" class="news-card">
+        <div class="news-card__img"><img src="india-street-food-5b/photo_01.jpg" alt="Street Food, Games, and a Festival of Color" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇳 International Exchange · Culture · 國際交流・文化</div>
+          <h3>Street Food, Games, and a Festival of Color<span class="zh">街頭小吃、遊戲，與繽紛的節慶</span></h3>
+          <div class="news-card__date">May 8, 2025 · 2025 年 5 月 8 日</div>
+          <p class="news-card__hook">In their second exchange with India, Class 5B feasted their eyes on Indian street food, learned brand-new games, and met the color and light of Holi — then danced their hearts out in return.</p>
+          <p class="news-card__hook-zh">與印度的第二次交流，五年乙班看遍印度街頭小吃、學了全新的遊戲、認識了光與色彩的荷麗節——也回敬了一場賣力的熱舞。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="india-culture-5a/" class="news-card">
+        <div class="news-card__img"><img src="india-culture-5a/photo_01.jpg" alt="Five Groups, Two Cultures" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇳 International Exchange · Culture · 國際交流・文化</div>
+          <h3>Five Groups, Two Cultures<span class="zh">五個小組，兩種文化</span></h3>
+          <div class="news-card__date">May 5, 2025 · 2025 年 5 月 5 日</div>
+          <p class="news-card__hook">Split into five groups, Class 5A introduced Taiwan piece by piece — and watched, spellbound, as an Indian girl in traditional dress performed a graceful dance.</p>
+          <p class="news-card__hook-zh">分成五組，五年甲班一塊一塊地介紹台灣——也看得入迷：一位身著傳統服飾的印度小女孩，跳起了優雅的舞。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="spain-reply-letters/" class="news-card">
+        <div class="news-card__img"><img src="spain-reply-letters/photo_01.jpg" alt="A Reply Arrives From Spain" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇪🇸 Postcard Exchange · 明信片交流</div>
+          <h3>A Reply Arrives From Spain<span class="zh">來自西班牙的回信</span></h3>
+          <div class="news-card__date">April 17, 2025 · 2025 年 4 月 17 日</div>
+          <p class="news-card__hook">The postcards we sent last semester finally came home with a reply — neat English, hand-drawn pictures, woven bracelets, and even Spanish candy. The English was hard, but we cracked it together.</p>
+          <p class="news-card__hook-zh">上學期寄出的明信片，終於收到回音——工整的英文、手繪的圖畫、編織的手環，還有西班牙糖果。英文很難，但我們一起破解了。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="israel-culture-box/" class="news-card">
+        <div class="news-card__img"><img src="israel-culture-box/photo_01.jpg" alt="A Box Arrives From Israel" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇱 Culture Box · 文化箱交流</div>
+          <h3>A Box Arrives From Israel<span class="zh">以色列寄來的文化箱</span></h3>
+          <div class="news-card__date">March 31, 2025 · 2025 年 3 月 31 日</div>
+          <p class="news-card__hook">Salty olives, peanutty Bamba, a game of Snakes and Ladders, and a set of special cups for the Sabbath — a box from Israel that taught us about a faraway way of life.</p>
+          <p class="news-card__hook-zh">鹹鹹的橄欖、花生味的 Bamba、一副蛇梯棋，還有一組安息日專用的杯子——一只以色列寄來的箱子，教我們認識遙遠的生活方式。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="japan-class-5b/" class="news-card">
+        <div class="news-card__img"><img src="japan-class-5b/photo_01.jpg" alt="School Days, Shared with Japan" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇯🇵 International Exchange · 國際交流</div>
+          <h3>School Days, Shared with Japan<span class="zh">和日本分享校園的日常</span></h3>
+          <div class="news-card__date">February 27, 2025 · 2025 年 2 月 27 日</div>
+          <p class="news-card__hook">Class 5B introduced Japan to Taiwan's Indigenous cultures and rare animals — and heard, in return, all about sports festivals and singing contests at a school in Saitama.</p>
+          <p class="news-card__hook-zh">五年乙班向日本介紹台灣的原住民文化與特有動物，也聽見了埼玉一所小學裡的運動會與歌唱比賽。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="japan-class-5a/" class="news-card">
+        <div class="news-card__img"><img src="japan-class-5a/photo_01.jpg" alt="Five Groups Meet Japan" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇯🇵 International Exchange · 國際交流</div>
+          <h3>Five Groups Meet Japan<span class="zh">五個小組，認識日本</span></h3>
+          <div class="news-card__date">February 26, 2025 · 2025 年 2 月 26 日</div>
+          <p class="news-card__hook">Class 501 split into five groups to introduce Taiwan's landmarks, wildlife, history, food, and money — then gathered for a happy Taiwan–Japan group photo.</p>
+          <p class="news-card__hook-zh">五年甲班分成五組，介紹台灣的景點、動植物、歷史人物、美食與貨幣，最後拍下一張開心的台日大合照。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="israel-taiwan-treasures/" class="news-card">
+        <div class="news-card__img"><img src="israel-taiwan-treasures/photo_01.jpg" alt="Swapping the Treasures of Two Countries" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇱 International Exchange · Culture · 國際交流・文化</div>
+          <h3>Swapping the Treasures of Two Countries<span class="zh">交換兩國的寶物</span></h3>
+          <div class="news-card__date">February 24, 2025 · 2025 年 2 月 24 日</div>
+          <p class="news-card__hook">Class 602 introduced Israel to Taiwanese snacks, folk toys, cultural objects, and our coins and bills — and agreed to mail each other a box of treasures across the world.</p>
+          <p class="news-card__hook-zh">六年乙班向以色列介紹台灣的傳統點心、童玩、文物與新台幣，並約定互寄一箱寶物到地球的另一端。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="turkiye-culture-box/" class="news-card">
+        <div class="news-card__img"><img src="turkiye-culture-box/photo_01.jpg" alt="Unboxing a Gift From Türkiye" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇹🇷 Culture Box · 文化箱交流</div>
+          <h3>Unboxing a Gift From Türkiye<span class="zh">開箱！土耳其的文化禮物</span></h3>
+          <div class="news-card__date">January 13, 2025 · 2025 年 1 月 13 日</div>
+          <p class="news-card__hook">After the end-of-term ceremony came the moment our fifth graders had waited for — opening a culture box from Türkiye, full of handwritten cards, bookmarks, a woven backpack, and the famous blue evil-eye charm.</p>
+          <p class="news-card__hook-zh">結業式之後，五年級孩子引頸期盼的時刻到了——打開來自土耳其的文化箱，裡頭有手寫卡片、書籤、編織背包，還有著名的藍眼睛護身符。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="turkiye-postcards-sent/" class="news-card">
+        <div class="news-card__img"><img src="turkiye-postcards-sent/photo_01.jpg" alt="Postcards on Their Way to Türkiye" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇹🇷 Postcard Exchange · 明信片交流</div>
+          <h3>Postcards on Their Way to Türkiye<span class="zh">寄往土耳其的明信片</span></h3>
+          <div class="news-card__date">January 6, 2025 · 2025 年 1 月 6 日</div>
+          <p class="news-card__hook">Our fifth graders handwrote postcards for a gifted-and-talented school in İstanbul, and tucked in Taiwanese snacks and KangLang souvenirs — opening a window onto the wider world.</p>
+          <p class="news-card__hook-zh">五年級的孩子親手寫下明信片，寄給伊斯坦堡一所資優學校，還附上台灣零食與槺榔的文創紀念品——為自己推開一扇通往世界的窗。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="spain-postcards-sent/" class="news-card">
+        <div class="news-card__img"><img src="spain-postcards-sent/photo_01.jpg" alt="Postcards and Warm Wishes for Spain" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇪🇸 Postcard Exchange · 明信片交流</div>
+          <h3>Postcards and Warm Wishes for Spain<span class="zh">寄給西班牙的明信片與祝福</span></h3>
+          <div class="news-card__date">January 5, 2025 · 2025 年 1 月 5 日</div>
+          <p class="news-card__hook">Our sixth graders made self-introduction videos and postcards bursting with Taiwanese flavor for a school in Spain — and added their heartfelt wishes after hearing of the floods in Valencia.</p>
+          <p class="news-card__hook-zh">六年級的孩子為西班牙的學校準備了自我介紹影片與充滿台灣味的明信片，也在得知瓦倫西亞水災後，捎上最誠摯的祝福。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="israel-christmas-recorder/" class="news-card">
+        <div class="news-card__img"><img src="israel-christmas-recorder/photo_01.jpg" alt="A Christmas Song for Israel" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇱 International Exchange · 國際交流</div>
+          <h3>A Christmas Song for Israel<span class="zh">吹給以色列的聖誕歌</span></h3>
+          <div class="news-card__date">December 26, 2024 · 2024 年 12 月 26 日</div>
+          <p class="news-card__hook">Class 602 learned about Israel's food, language, and famous people — and answered with a Christmas carol on the recorder, sending joy and peace to the other side of the world.</p>
+          <p class="news-card__hook-zh">六年乙班認識了以色列的食物、語言與名人，也用中音笛吹奏聖誕歌曲回應，把喜悅與和平送到地球的另一端。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="israel-language-swap/" class="news-card">
+        <div class="news-card__img"><img src="israel-language-swap/photo_01.jpg" alt="Little Teachers of Two Languages" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇱 International Exchange · 國際交流</div>
+          <h3>Little Teachers of Two Languages<span class="zh">互當小老師，教彼此的語言</span></h3>
+          <div class="news-card__date">December 24, 2024 · 2024 年 12 月 24 日</div>
+          <p class="news-card__hook">Meeting students from Israel for the first time, Class 601 took turns being little teachers — we taught everyday Chinese, they taught everyday Hebrew, and we introduced our small but charming school.</p>
+          <p class="news-card__hook-zh">第一次見到以色列的學生，六年甲班輪流當起小老師——我們教日常中文，他們教日常希伯來文，還介紹了我們小而美的學校。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+      <a href="india-first-meet/" class="news-card">
+        <div class="news-card__img"><img src="india-first-meet/photo_01.jpg" alt="Our Very First Meeting with India" loading="lazy"></div>
+        <div class="news-card__body">
+          <div class="news-card__tag">🇮🇳 International Exchange · 國際交流</div>
+          <h3>Our Very First Meeting with India<span class="zh">與印度的第一次相見</span></h3>
+          <div class="news-card__date">October 28, 2024 · 2024 年 10 月 28 日</div>
+          <p class="news-card__hook">After months of preparation, our long-awaited first exchange with India arrived. Two schools of children greeted each other warmly, and every English sentence we had practiced finally found its moment.</p>
+          <p class="news-card__hook-zh">籌備已久，我們與印度的第一次交流終於登場。兩校的孩子熱情相見，那些練了又練的英文句子，總算派上了用場。</p>
+          <span class="news-card__cta">Read the report</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 <footer>
-  International Education · KangLang Elementary &nbsp;·&nbsp; 臺中市清水區槺榔國民小學<br>
-  Bilingual course by <a href="https://www.mycultureconnect.org/" target="_blank" rel="noopener">My Culture Connect 人師教育協會</a> · provided free of charge
+  <div class="wrap">
+    <div>© 2026 臺中市清水區槺榔國民小學 · KangLang Elementary School</div>
+    <div class="partner">Bilingual page by <a href="https://www.mycultureconnect.org/" target="_blank" rel="noopener">My Culture Connect 人師教育協會</a> &middot; provided free of charge</div>
+  </div>
 </footer>
 
+<script src="../assets/js/news-speak.js"></script>
 </body>
 </html>

@@ -977,8 +977,52 @@ footer .partner a:hover{border-bottom-color:#ffe8c3;}
 }
 
 
+/* ============ Explore More (homepage cards) ============ */
+.explore{background:linear-gradient(180deg,#fff 0%,var(--teal-soft) 100%);}
+.explore-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.explore-card{
+  display:flex;flex-direction:column;
+  background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:34px 30px 30px;box-shadow:var(--shadow-sm);
+  border-top:6px solid var(--teal);color:inherit;text-decoration:none;
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+}
+.explore-card:nth-child(2){border-top-color:var(--sand);}
+.explore-card:nth-child(3){border-top-color:var(--stone);}
+.explore-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--teal);color:inherit;}
+.explore-card__icon{
+  width:60px;height:60px;border-radius:16px;
+  background:var(--teal-soft);
+  display:flex;align-items:center;justify-content:center;font-size:32px;margin-bottom:20px;
+}
+.explore-card:nth-child(2) .explore-card__icon{background:var(--sand-soft);}
+.explore-card:nth-child(3) .explore-card__icon{background:var(--stone-soft);}
+.explore-card h3{
+  font-family:'Cormorant Garamond','PingFang TC',serif;
+  font-size:27px;color:var(--teal-deep);line-height:1.2;font-weight:600;margin-bottom:4px;
+}
+.explore-card h3 small{
+  display:block;font-family:'PingFang TC',sans-serif;
+  font-size:17px;color:var(--ink-soft);font-weight:500;margin-top:4px;letter-spacing:.04em;
+}
+.explore-card p{font-size:18px;color:var(--ink);line-height:1.65;margin-top:14px;}
+.explore-card .zh-mini{
+  font-family:'PingFang TC',sans-serif;
+  font-size:16px;color:var(--ink-soft);line-height:1.75;
+  margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);
+}
+.explore-card__go{
+  margin-top:auto;padding-top:20px;
+  font-family:'Cormorant Garamond',serif;font-weight:700;
+  color:var(--sand-deep);font-size:18px;letter-spacing:.04em;
+}
+.explore-card__go::after{content:" →";display:inline-block;transition:margin-left .2s;}
+.explore-card:hover .explore-card__go::after{margin-left:6px;}
+
+
 /* ============ Mobile ============ */
 @media (max-width: 880px) {
+  .explore-grid{grid-template-columns:1fr;}
   .title{padding:60px 0 50px;}
   section{padding:64px 0;}
   .about-grid{grid-template-columns:1fr;gap:36px;}
